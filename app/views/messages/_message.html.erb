@@ -1,0 +1,15 @@
+<div class="event">
+  <div class="content">
+    <div class="summary">
+      <a>
+        <em>
+          <% if message.user == current_user %>
+            <span style="color: red;">Myself</span>
+          <% else %>
+            <%= message.user.username%>
+          <% end %>
+        </em>
+      </a>: <%= message.body %>
+    </div>
+  </div>
+</div>
